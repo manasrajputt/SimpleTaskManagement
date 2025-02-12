@@ -1,0 +1,20 @@
+.task-list{
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.list-heading{
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+
+.list{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }

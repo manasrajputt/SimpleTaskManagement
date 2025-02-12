@@ -1,0 +1,57 @@
+.task-container{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.task-container h4{
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 25px;
+    color: #3b6299;
+    text-transform: capitalize;
+}
+
+.task-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group label{
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select  {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.task-container button {
+    padding: 10px;
+    background-color: #3b6299;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+button:hover {
+    background-color: #335686;
+}

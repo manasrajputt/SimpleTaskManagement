@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #5a98ef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+}
+.navbar-Items{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.navbar-Items p{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.btns Link{
+    text-decoration: none;
+}
+
+.registerbtn, .loginbtn{
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    padding: 8px 10px;
+    background-color: #3b6299;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #335686;
+
+}

@@ -1,0 +1,51 @@
+.list-div{
+    padding: 15px;
+    height: 50%;
+}
+
+.list-div h4{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.list-item{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.item{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.item .title-div{
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    gap: 8px;
+    background-color: rgb(221, 211, 211);
+    border-radius: 5px;
+}
+
+.title{
+    color: blueviolet;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.title-div p{
+font-style: italic;
+}
+
+.high{
+    color: red;
+    text-transform: capitalize;
+}
+
+.medium{
+    color:  green;
+    text-transform: capitalize;
+}
