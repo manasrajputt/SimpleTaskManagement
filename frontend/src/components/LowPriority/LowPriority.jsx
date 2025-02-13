@@ -31,7 +31,7 @@ const LowPriority = () => {
                 </div>
                 <div className="btn">
                   <button onClick={() => deleteTask(task._id)}>
-                    Delete Task
+                    Delete
                   </button>
                   <button className={`status-${task.status}`}>
                     {task.status}
