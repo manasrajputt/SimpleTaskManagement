@@ -23,7 +23,6 @@ const LowPriority = () => {
                   <Link to={`/task-details/${task._id}`} className="title">
                     {task.title}
                   </Link>
-                  {task.status}
                 </div>
                 <div className="date-div">
                   <p>Due: {new Date(task.dueDate).toLocaleDateString()}</p>

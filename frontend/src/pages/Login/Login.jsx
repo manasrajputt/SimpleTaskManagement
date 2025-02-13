@@ -40,6 +40,9 @@ const Login = () => {
       });
       navigate("/");
     } catch (err) {
+      if (err.status === 400) {
+        return window.confirm(`${err.response.data.message}`);
+      }
       console.log(err);
       dispatch({ type: "REGISTER_FAILURE", payload: err.response.data });
     }
