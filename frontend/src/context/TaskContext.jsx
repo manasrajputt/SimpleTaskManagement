@@ -93,6 +93,9 @@ const TaskProvider = ({ children }) => {
   };
 
   const deleteTask = async (taskId) => {
+    const isConfirmed = window.confirm("Are you sure you want to delete this task?");
+    if (!isConfirmed) return;
+    
     try {
       await axios.delete(`http://localhost:3000/api/task/${taskId}`, {
         headers: {

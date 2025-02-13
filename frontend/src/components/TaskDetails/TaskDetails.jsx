@@ -77,7 +77,7 @@ const TaskDetails = () => {
             </select>
           </div>
           <button type="submit">Update Task</button>
-          <button onClick={() => dispatch(deleteTask(task._id))}>
+          <button onClick={() => (deleteTask(task._id))}>
             Delete Task
           </button>
         </form>

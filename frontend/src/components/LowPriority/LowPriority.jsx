@@ -30,12 +30,12 @@ const LowPriority = () => {
                   <p className={`priority-${task.priority}`}>{task.priority}</p>
                 </div>
                 <div className="btn">
-                  <button onClick={() => dispatch(deleteTask(task._id))}>
-                    Delete
+                  <button onClick={() => deleteTask(task._id)}>
+                    Delete Task
                   </button>
-                  {/* <button className={`status-${task.status}`}>
-                  {task.status}
-                </button> */}
+                  <button className={`status-${task.status}`}>
+                    {task.status}
+                  </button>
                 </div>
               </li>
             ))}

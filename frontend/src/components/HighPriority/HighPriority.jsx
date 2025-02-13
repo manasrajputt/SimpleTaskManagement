@@ -13,9 +13,9 @@ const HighPriority = () => {
     <div className="list-div">
       <h4>High Priority</h4>
       {highPriority.loading ? (
-        <p style={{textAlign:"center"}}>Loading tasks...</p>
+        <p style={{ textAlign: "center" }}>Loading tasks...</p>
       ) : highPriority.length === 0 ? (
-        <p style={{textAlign:"center"}}>No tasks available</p>
+        <p style={{ textAlign: "center" }}>No tasks available</p>
       ) : (
         <div className="scrollable-list">
           <ul className="list-item">
@@ -25,16 +25,19 @@ const HighPriority = () => {
                   <Link to={`/task-details/${task._id}`} className="title">
                     {task.title}
                   </Link>
+                  {task.status}
                 </div>
                 <div className="date-div">
                   <p>Due: {new Date(task.dueDate).toLocaleDateString()}</p>
                   <p className={`priority-${task.priority}`}>{task.priority}</p>
                 </div>
                 <div className="btn">
-                  <button onClick={() => dispatch(deleteTask(task._id))}>
+                  <button onClick={() => deleteTask(task._id)}>
                     Delete
                   </button>
-                  <button className={`status-${task.status}`}>{task.status}</button>
+                  <button className={`status-${task.status}`}>
+                    {task.status}
+                  </button>
                 </div>
               </li>
             ))}
